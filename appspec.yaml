@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: ""
+        LoadBalancerInfo:
+          ContainerName: "api"
+          ContainerPort: "9005"
+        PlatformVersion: "LATEST"
